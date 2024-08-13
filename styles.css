@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root{
+    --color-primario:#000;
+    --color-segundario: #eeeeee;
+    --color-terciario: #1e90ff;
+
+    --fuente-montserrat:"Montserrat", sans-serif;
+    --fuente-krona: "Krona one", sans-serif;
+    --fuente-size: 1.5rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header{
+    background-color:var(--color-terciario);
+    color: var(--color-segundario);
+    margin: 1% 0%;
+    padding: 2% 0% 0% 15%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header:hover{
+    background-color: black;
+}
+
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link{
+    font-family: var(--fuente-montserrat);
+    font-size: var(--fuente-size);
+    font-weight: 600;
+    padding: 0px 25px;
+    text-decoration: none;
+}
+
+body {
+  background-color:var(--color-primario);
+  color: var(--color-segundario);
+  font-style: normal;
+  font-family: var(--fuente-krona)
+}
+
+p {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+.presentacion {
+  display: flex;
+  align-items: center;
+  padding: 5% 10%;
+  justify-content: space-between;
+  gap: 82px;
+}
+
+.titulo__destaque {
+  font-size: 2rem;
+  color: var(--color-terciario);
+  font-family: var(--fuente-krona);
+
+}
+.titulo-blog {
+  font-size: 2rem;
+  color:var(--color-segundario);
+  font-family: var(--fuente-krona);
+}
+
+.presentacion__contenido__titulo{
+  font-size: 2.25rem;
+  color:var(--color-terciario);
+  font-family: var(--fuente-krona);
+}
+
+.presentacion__contenido_texto {
+  font-size: var(--fuente-size);
+  font-family: var(--fuente-montserrat);
+  color: var(--color-segundario);
+}
+
+.contenido__destaque{
+  color: var(--color-terciario);
+}
+
+.grupos {
+  color: var(--color-terciario);
+  font-family: var(--fuente-montserrat);
+  font-size: 20px;
+}
+
+.lista_grupos {
+  font-size: 15px;
+  font-family: var(--fuente-montserrat);
+  display: flex;
+  flex-direction: column;
+  color: var(--color-segundario);
+  padding: 10px 20px;
+}
+
+.LogoTelefonica {
+  padding: 5px;
+}
+
+.presentacion__contenido {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.LogoTelefonica {
+  width: 300px;
+  height: 300px;
+  transition: 0.3 ease-in-out;
+  border-radius: 180px;
+}
+
+.LogoTelefonica:hover {
+  transform: scale(1.3);
+}
+
+.presentacion__enlaces {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.presentacion__enlaces__subtitulo {
+  font-family: var(--fuente-montserrat);
+  font-size: var(--fuente-size);
+  font-weight: 600;
+  color: var(--color-terciario);
+}
+
+.presentacion__enlace__link {
+  width: 50%;
+  height: 20px;
+  text-align: center;
+  padding: 10.5px 0;
+  border-radius: 8px;
+  font-family: var(--fuente-montserrat);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-segundario);
+  border: 1px solid var(--color-terciario);
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.presentacion__enlace__link:hover {
+  background-color: var(--color-terciario);
+  cursor: pointer;
+}
+
+.footer {
+  background-color: var(--color-terciario);
+  padding: 5px;
+  color: var(--color-segundario);
+  text-align: center;
+  font-family: var(--fuente-montserrat);
+  font-size: var(--fuente-size);
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+
+  .header{
+    padding: 10%;
+  }
+
+  .header__menu{
+    justify-content: center;
+  }
+
+  .presentacion{
+    flex-direction: column-reverse;
+    pad: 5%;
+  }
+
+  .presentacion__contenido{
+    width: auto;
+  }
+}
+
